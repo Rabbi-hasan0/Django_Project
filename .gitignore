@@ -1,0 +1,23 @@
+# Python bytecode
+*.pyc
+__pycache__/
+
+# SQLite database
+db.sqlite3
+
+# Media / uploaded files
+media/
+
+# VS Code settings
+.vscode/
+
+# Environment / virtualenv
+env/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

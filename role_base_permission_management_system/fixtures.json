@@ -1,0 +1,22 @@
+[
+    {
+        "model": "app.menulist",
+        "pk": 1,
+        "fields": {
+            "module_name": "Blog",
+            "menu_name": "Blog List",
+            "menu_url": "/blog",
+            "menu_icon": "fa fa-user icon",
+            "parent_id": 0 ,
+            "is_main_menu": true,
+            "is_sub_menu": false,
+            "is_child_sub_menu": false,
+            "created_at": "2026-03-08T10:00:00Z",
+            "updated_at": "2026-03-08T10:00:00Z",
+            "deleted_at": "2026-03-08T10:00:00Z",
+            "created_by": 1,
+            "is_active": true,
+            "deleted": false
+        }
+    }
+]

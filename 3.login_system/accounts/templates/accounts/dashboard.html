@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+
+{% block content %}
+    <div class="container mt-5">
+
+        <!-- welcome section -->
+        <div class="text-center mb-5">
+            <h2>Welcome {{ user.username }}</h2>
+            <p class="text-muted">Manage your account from dashboard</p>
+
+            <img src="{% static 'images/default_profile.png' %}" class="profile-pic mt-3">
+        </div>
+
+
+        <!-- cards -->
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card dashboard-card text-center p-4">
+                    <h5>All Course</h5>
+                    <p>View course info</p>
+                    <a href="#" class="btn btn-primary btn-sm">Open</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card dashboard-card text-center p-4">
+                    <h5>Python Djago Course</h5>
+                    <p>Join the course</p>
+                    <a href="#" class="btn btn-success btn-sm">Open</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card dashboard-card text-center p-4">
+                    <h5>AI Course</h5>
+                    <p>Join the course</p>
+                    <a href="#" class="btn btn-success btn-sm">Open</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card dashboard-card text-center p-4">
+                    <h5>Payment System</h5>
+                    <p>view payment system</p>
+                    <a href="#" class="btn btn-primary btn-sm">view</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

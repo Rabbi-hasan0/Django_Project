@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Codeforces Profile Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; text-align: center; }
+        .profile-card { background: white; padding: 20px; border-radius: 10px; display: inline-block; margin-top: 50px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .avatar { border-radius: 50%; width: 100px; height: 100px; }
+        .rank { font-weight: bold; text-transform: capitalize; }
+        .rating { color: #3498db; font-size: 24px; }
+    </style>
+</head>
+<body>
+
+    <form method="GET">
+        <input type="text" name="handle" placeholder="Enter CF Handle (e.g. tourist)">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="profile-card">
+        {% if success %}
+            <img src="{{ avatar }}" class="avatar">
+            <h1>{{ handle }}</h1>
+            <p class="rank">Rank: {{ rank }}</p>
+            <p class="rating">Current Rating: {{ rating }}</p>
+            <p>Max Rating: {{ max_rating }}</p>
+        {% else %}
+            <p style="color: red;">{{ error_message }}</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>
